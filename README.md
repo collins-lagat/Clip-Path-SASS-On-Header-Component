@@ -1,2 +1,2 @@
 # Clip-Path-SASS-On-Header-Component
-![alt text](https://raw.githubusercontent.com/collins-lagat/Clip-Path-SASS-On-Header-Component/master/asset/image.png)
+![DEMO](https://raw.githubusercontent.com/collins-lagat/Clip-Path-SASS-On-Header-Component/master/assets/image.PNG)
