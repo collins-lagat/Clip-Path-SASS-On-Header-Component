@@ -1,0 +1,27 @@
+@function polygon_var ($range : 5) {
+    $coord: 0 0, 100% 0, 100% 100%;
+    $up: 90;
+    $side: 100;
+    $rate: 100/$range;
+    @for $_ from 1 through $range {
+      $g: $coord;
+      $coord: append($g, ($side*1% $up*1%), $separator: comma);
+      $g: $coord;
+      $up: 100;
+      $side: $side - $rate;
+      $coord: append($g, ($side*1% $up*1%), $separator: comma);
+      $up: 90;
+    }
+    
+    @return $coord;
+  }
+  
+  .main {
+    display: flex;
+    width: 100%;
+    height: 16rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #68d391;
+    clip-path: polygon(polygon_var());
+  }

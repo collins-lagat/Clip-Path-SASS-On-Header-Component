@@ -1,4 +1,5 @@
-import './main.css'
+import './tailwind.css'
+import './main.scss'
 
 var x = (y) => {return y*y}
 
